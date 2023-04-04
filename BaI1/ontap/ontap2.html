@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+img{
+    width:100%;
+}
+table, th, td {
+  border: 1px solid blue;
+  
+
+}
+#table1 {
+  border-collapse:collapse;
+  border-color: aqua;
+}
+#table2 {
+  border-collapse:separate;
+  border-spacing:10px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+<a href="a.html" target="_blank">This is a link</a>
+<!--link color-->
+<img src="Lao-Hac.jpg" alt="laohac" style="width:128px;height:128px;">
+<!--nên dùng style cho hình ảnh-->
+
+<h2>table</h2>
+<table style="width:100%">
+<tr>
+  <th>company</th>
+  <th>name</th>
+  <th>age</th>
+</tr>
+<tr>
+  <td>ABC</td>
+  <td>John</td>
+  <td>27</td>
+</tr>
+<tr>
+  <td>EF</td>
+  <td>Mary</td>
+  <td>26</td>
+</tr>
+</table>
+<!--border-collapsse:separate để làm tách biệt các ô với bảng-->
+<!--border-spacing:10px là khoảng cách giữa ô và bảng đó-->
+
+<table id="table1">
+  <tr>
+    <th>company</th>
+    <th>name</th>
+    <th>age</th>
+  </tr>
+  <tr>
+    <td>ABC</td>
+    <td>John</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>EF</td>
+    <td>Mary</td>
+    <td>26</td>
+  </tr>
+  </table>
+
+  <table id="table2">
+    <tr>
+      <th>company</th>
+      <th>name</th>
+      <th>age</th>
+    </tr>
+    <tr>
+      <td>ABC</td>
+      <td>John</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>EF</td>
+      <td>Mary</td>
+      <td>26</td>
+    </tr>
+    </table>
+<!--#table1,#table2 và lệnh id="table1" để chuyển hướng bảng đến các thuộc tính của table1 -->
+
+
+
+</body>
+</html>
+

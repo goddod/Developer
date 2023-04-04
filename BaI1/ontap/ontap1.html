@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hello</title>
+        <style>
+            body{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size:15px;
+            }
+            h1{
+                color:aqua;
+                background-image: url('Lao-Hac.jpg');
+                background-repeat: no-repeat;
+
+            }
+            table, th, td {
+                border:15px solid blue;
+                border-collapse:collapse;
+
+            }
+            th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+             table{
+                border-spacing:30px;
+
+             }
+             tr:nth-child(even){
+                background-color:aqua;
+
+             }
+             tr{border-bottom: 20px solid #ddd;}
+             tr:hover {background-color: #D6EEEE;}
+
+        </style>
+    </head>
+    <!--tr:nth-child(even){background-color} để hiển thị bảng sọc ngang-->
+    <body>
+        <h1>table</h1>
+        <table style="width:100%">
+            <tr>
+                <th>name</th>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <th rowspan="2">age</th> 
+            <td colspan="3"> 14      15       16</td>
+            <!--gộp 2 bảng thành 1-->
+                
+                
+            </tr>
+            <tr>
+                
+                <td>student</td>
+                <td>student</td>
+                <td>student</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
