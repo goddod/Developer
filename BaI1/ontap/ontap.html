@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
         <title>ôn tập</title>
         <link rel="stylesheet" href="style.css">
         <!--để lấy css trong cùng 1 thư mục-->
+        <base href="https://www.w3schools.com/" target="_blank">
     </head>
     <body>
         <h1><a href="https://anybooks.vn/truyen-ngan-hay.html">TRUYỆN NGẮN HAY</a></h1>
@@ -296,7 +301,75 @@ Tôi nghĩ thầm trong bụng thế. Còn lão Hạc, lão nghĩ gì? Đột nh
         <!--<iframe src="url" title=""></iframe>-->
         <h2>HTML iframe</h2>
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/QJ5QJ3iqfF0" title="Gia Đình Hạnh Phúc : Tập 33 - Bất Ngờ | Đậu Phộng TV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!--hiển thị 1 trang web trên 1 trang web-->
 
+        <iframe src="https://w4.phimmoi.vip/" style="width:1280px; height:720px;" title="google"></iframe>
+        <iframe src="https://qldt.ptit.edu.vn/default.aspx?page=dangnhap" style="width:1280px; height:720px; border: 2px solid red" title="phimmoi"></iframe>
+        <!--iframe thêm viền-->
+        
+        <iframe src="https://w4.phimmoi.vip/" name="iframe_a"  style="width:1280px; height:720px;" ></iframe>
+        <a href="https://toanmath.com/kiem-tra-hinh-hoc-12-chuong-3" target="iframe_a">toan</a>
+        <!--ấn vào link link đó sẽ xuất hiện trên trang của iframe-->
+
+        <p id="vidu">abc</p>
+        <script>
+            function myFunction(){
+                document.getElementById("vidu").style.fontSize="25px";
+                document.getElementById("vidu").style.color="red";
+                document.getElementById("vidu").style.backgroundColor="blue";
+            }
+        </script>
+        <button type="button" onclick="myFunction()">me</button>
+       <!--js thường sử dụng câu lệnh document.getElementById -->
+       <!--js có thể thay đổi content, style, attrributes-->
+       
+        <h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  
+  if (sw == 0) {
+    pic = "https://www.w3schools.com/html/pic_bulboff.gif"
+  } else {
+    pic = "https://www.w3schools.com/html/pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+<!--var: kiểu-->
+<!--function + 1 hàm (như hàm light(sw))-->
+<!--pic="src"-->
+<img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<!--noscript ?????-->
+
+<img src="https://www.google.com.vn/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google">
+<!--đường dẫn tệp tuyệt đối-->
+<img src="/images/picture.jpg" alt="núi">
+<img src="../images/picture.jpg" alt="Mountain">
+<img src="images/picture.jpg" alt="Mountain">
+<!--đường dẫn tệp tương đối?????-->
+<!--style kiểu-->
+<!--link xác định mối quan hệ giữa tài liệu hiện tại với tài liệu bên ngoài -->
+
+
+
+
+<a href="tags/tag_base.asp">HTML base Tag</a>
+
+<!--base chỉ định URL cơ sở và/hoặc đích cho tất cả các URL tương đối trong một trang-->
+<!--meta?????-->
+<!--float căn chỉnh -->
+
+
+    
 
 
 

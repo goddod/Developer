@@ -88,3 +88,9 @@ td:nth-child(even), th:nth-child(even){
 .main {
   text-align: center;
 }
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
