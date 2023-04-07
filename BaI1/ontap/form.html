@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="https://www.google.com/?hl=vi" target="_blank" method="get">
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="ád"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="ád"><br><br>
+  <input type="submit" value="Submit">
+  <!--điền tên vào rồi submit-->
+  <!--<input  type=""  id=""   name=""   value=""  >-->
+  <!--<label for=""></lable>-->
+    <!--text là loại điền-->
+    <!--submit là loại nhấn đúp-->
+    <!--value: hiển thị-->
+    <!--radio là loại chọn phương án-->
+    <!--checkbox là hộp kiểm-->
+    <!--for để liên kết với id nghĩa là phải giống nhau-->
+    <!--name cũng có thể để hiện thị để cho biết ví dụ 4 phương án kiểu giống nhau chỉ chọn 1 trong 4 phương án-->
+    <!--action là thuộc tính để dẫn đến trang web-->
+    <!--method="get" thuộc tính chỉ url; method="post" thuộc tính chỉ http-->
+
+</form> 
+
+<form >
+    <input  type="radio" id="html" name="abc" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="abc" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="js" name="abc" valur="JS">
+    <label for="js">JS</label><br>
+</form>
+
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/action_page.php">
+    <input type="checkbox" id="vehicle1" name="v1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br><br>
+    <input type="submit" value="submit">
+  </form> 
+<!--không hữu dụng lắm-->
+
+
+  </form> 
+  
+  <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+  <form action="/action_page.php" autocomplete="on">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br><br>
+    <input type="submit">
+  </form>
+  <!--autocomplete="on" là tự động điền -->
+  
+  <form action="/action_page.php" novalidate>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit">
+  </form>
+  <!--novalidate là thuộc tính hợp thức hóa??????-->
+
+  <form action="https://vnexpress.net/oto-xe-may/v-car">
+    <textarea name="message" style="width:200px; height:600px;">The cat was playing in the garden.</textarea>
+  <br>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat" selected>Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <input type="submit">
+  </form>
+  <!--select để lựa chọn-->
+  <!--selected để mục đầu tiên danh sách là mặc định-->
+  <!--Sử dụng size="" thuộc tính để chỉ định số lượng giá trị hiển thị -->
+  <!--multiple cho phép chọn crl+đúp chuột chọn nhiều-->
+  <!--Phần <textarea>tử xác định trường nhập liệu nhiều dòng (vùng văn bản)-->
+
+
+    <h2>The button Element</h2>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<!--button dùng để xác định nút có thể nhấp Hello World sẽ hiện ở 1 trang nhỏ khác-->
+
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+    <!--fieldset để nhóm các dữ liệu liên quan vào-->
+
+  </form>
+
+  <form action="/action_page.php">
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <!--Người dùng sẽ thấy danh sách thả xuống gồm các tùy chọn được xác định trước khi họ nhập dữ liệu-->
+    
+  </form>
+  <!---->
+
+
+</body>
+</html>

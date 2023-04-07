@@ -1,0 +1,87 @@
+#boder{
+    
+    border-style:solid;
+    border-top-width:  100px;
+    border-right-width:100px;
+    border-bottom-width:0px;
+    border-left-width:10px;
+
+    border: 10px solid  red;
+    /*cách ngắn hơn*/
+    
+
+}
+.box{
+    width:100px;
+    height:100px;
+    color:aliceblue;
+    background-color:blueviolet;
+    padding: 16px;
+    border: 2px solid red;
+    box-sizing: border-box;
+    /*giữ nguyên kích thước khung*/
+    /*box-sizing:content-box để giữ nguyên*/
+}
+.box{
+    box-sizing:unset;
+    /*để hủy box-sizing trên*/
+
+}
+.header{
+    width:100px;
+    height:100px;
+    background-color:aquamarine;
+    padding: 20px;
+    box-sizing:border-box;
+    border: 10px dashed #fff;
+    background-clip:border-box;
+    /*đổ từ border vào*/
+    /*padding-box đổ từ padding vào*/
+    /*content-box đổ từ content vào*/
+
+
+}
+.lop{
+    width:100px;
+    height:100px;
+    background-image:linear-gradient(0deg, black, #ccc), url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+    /*linear-gradient tạo ra dải màu chueyenr đều đặn*/
+    background-size:100px;
+    /*background-size:contain có tác dụng để lấy sao cho ảnh không bị che khuất lúc lấy chiều ngang 100% lúc lấy chiều dọc 100% khi phóng to nhỏ web*/
+    /*background-size:cover lấy chiều dài hơn 100% kể cả che khuất ảnh sẽ giữ nguyên toàn web*/
+    border:20px solid red;
+    padding:20px;
+    box-sizing:border-box;
+    background-origin: padding-box;
+    /*giống background-clip*/
+}
+.class{
+    width:100px;
+    height:100px;
+    background-image:url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+    background-repeat:no-repeat;
+    background-size:100px;
+    background-position: bottom right;
+    /*background-position: 10% center=background-position:10%     sau 10% sẽ tự hiểu là center*/
+    background-position:top 20px right -10px;
+    /*trường hợp dụng kết hợp*/
+    background-position: 20px 50px;
+    /* 20px dịch sang phải, 50px dịch xuống dưới theo chiều ngang, -20px dịch sang trái, -50px dịch lên trên*/
+
+    background: red url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png') no-repeat center / contain;
+    /*cú pháp ngắn gọn của tất cả những thuộc tính vừa học trên*/
+    /*có cần theo thứ tự không??????*/
+
+
+}
+.funtion{
+    width:calc(80%+20px);
+    /*calc()để tính toán bên trong*/
+    
+}
+
+a::after{
+    content:"("attr(href)")";
+    /*lớp giả*/
+    /*tự động thêm được*/
+}

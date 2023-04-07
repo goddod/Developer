@@ -11,6 +11,7 @@ pre{
     color: white;
     padding: 12px;
     border:10px;
+    
     border-radius:10px;
     text-decoration: none;
 
@@ -30,10 +31,30 @@ article{
         padding: 10px; 
       
 }
-footer {
-    background-color:rgb(82, 83, 88);
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-  
+footer{
+    background-color:rgb(165, 165, 165);
+        padding: 10px;
+        text-align: left;
+        color:black;
+}
+  .nav{
+    width:1280px;
+    height:60px;
+    background-color:red;
+    display:flex;
+    justify-content:space-between;
+    /*justify để căn chỉnh nếu sau : là space-between thì là đẩy các item cách xa nhau*/
+}
+.nav-list{
+    padding-left: 0;
+    margin:auto 16px;
+    display:flex;
+    /*display:flex để giúp cùng dòng nhau*/
+}
+.nav-item{
+    color:white;
+    list-style: none;
+    margin:0 8px;
+    
+}
+

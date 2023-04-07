@@ -1,0 +1,38 @@
+
+
+.nav{
+    height:60px;
+    background-color:red;
+    display:flex;
+    justify-content:space-between;
+    /*justify để căn chỉnh nếu sau : là space-between thì là đẩy các item cách xa nhau*/
+}
+.nav-list{
+    padding-left: 0;
+    margin:auto 16px;
+    display:flex;
+    /*display:flex để giúp cùng dòng nhau*/
+}
+.nav-item{
+    color:white;
+    list-style: none;
+    margin:0 8px;
+    
+}
+.form-container{
+    max-width: 720px;
+    padding:32px;
+    margin:36px auto 0 auto;
+    background-color:aliceblue;
+
+}
+.form-row{
+    padding: 8px 0;
+
+}
+.form-lable {
+
+}
+.form-input {
+
+}

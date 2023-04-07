@@ -1,0 +1,50 @@
+h1{
+    position:relative;
+    top:500px;
+    left:100px;
+    
+}
+.box{
+    width: 100%;
+    height:120px;
+    background-color:aqua;
+    position:relative;
+
+}
+.box-child{
+    width:50px;
+    height:50px;
+    background-color:blueviolet;
+    position:absolute;
+    top: 0;
+    right:0;
+}
+/*absolute là thuộc tính tuyệt đối phụ thuộc vào thẻ position gần nhất*/
+.box2{
+    background-color: darkgray;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+/*cách để làm mở mà vẫn nhìn xuyên qua được*/
+}
+.header{
+    width:100%;
+    height:17px;
+    background-color: red;
+    position:fixed;
+    /*vị trí cố định của trình duyệt*/
+    /*cách khác:
+    
+    height:17px;
+    background-color: red;
+    position:fixed;
+    top: 0;
+    left:0;
+    right:0;*/
+
+}
+ul{
+    height:2000px;
+}
